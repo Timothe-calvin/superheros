@@ -1,0 +1,17 @@
+body{
+    background-color: #14161a;
+}
+#main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  } 
+  .card {
+    background: #eaeaea;
+    padding: 15px 20px;
+    margin: 10px;
+    text-align: center;
+    font: #14161a;
+    border: 100px;
+  }
+
