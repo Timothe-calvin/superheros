@@ -17,5 +17,6 @@ body{
 }
 
 .card:hover {
+
     border: 5px solid  #f50d5d;
 }
