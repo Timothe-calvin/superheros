@@ -1,11 +1,13 @@
 body{
     background-color: #14161a;
 }
-#main {
+
+#root {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
   } 
+
   .card {
     background: #eaeaea;
     padding: 2px 15px;
@@ -13,10 +15,8 @@ body{
     text-align: center;
     font: #14161a;
     border: 5px solid;
-
 }
 
 .card:hover {
-
     border: 5px solid  #f50d5d;
 }
