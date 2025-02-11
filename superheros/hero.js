@@ -3,34 +3,22 @@ const root = document.getElementById("root");
 Hero().then((data) => {
   Hero().then((data) => {
 
-    data.map((Hero) => {
+    data.map((hero) => {
     const div = document.createElement("div")
-    div.append(Hero.name)
+    const img= document.createElement("img")
+    img.src= hero.images.sm
+    div.append(hero.name)
+    div.append(img)
+    div.append(hero.powerstats.combat)
+    div.append(hero.powerstats.durability)
+    div.append(hero.powerstats.intelligence)
+    div.append(hero.powerstats.power)
+    div.append(hero.powerstats.speed)
+    div.append(hero.powerstats.strength)
     div.classList.add("card")
     root.append(div);
-
-  const img = document.createElement('img'); 
-img.src ="https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2024/02/24163821/DC-Marvel-Jim-Lee.jpg"; 
-document.body.append(img);
-
-    
     })
-   
-
-data.map((Hero) => {
-  const image = document.createElement('img');
-  image.src = "https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2024/02/24163821/DC-Marvel-Jim-Lee.jpg"; 
-  div.append(img);
-})
-
-
-  data.map((Hero) => {
-  const div = document.createElement("div")
-  div.append(Hero.powerstats)
-  div.classList.add("card")
-  root.append(div);
-  })
-
+ 
 
 
 } )
